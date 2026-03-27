@@ -13,7 +13,8 @@ export const Accordion = ({ item }) => {
       {item.map((item, index) => (
         <div
           key={index}
-          className="border flex flex-col gap-3 py-4 px-6 border-black rounded"
+          onClick={() => handleOpen(index)}
+          className="border flex flex-col gap-3 py-4 px-6 cursor-pointer border-black hover:border-[#FF6B00] hover:border-3 rounded"
         >
           <div className="flex justify-between">
             <p className="font-bold text-lg">{item.title}</p>

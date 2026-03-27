@@ -51,7 +51,7 @@ export const About = () => {
         </div>
       </SectionView>
 
-      <Section>
+      <SectionView>
         <div className="py-41.5 flex flex-col gap-16">
           {/* Designed for focus */}
           <div className="text-center">
@@ -67,7 +67,7 @@ export const About = () => {
             <div className="md:w-80 h-80 rounded bg-[#E2E7F0]"></div>
           </div>
         </div>
-      </Section>
+      </SectionView>
     </div>
   );
 };
