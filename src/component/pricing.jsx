@@ -93,7 +93,7 @@ export const Pricing = () => {
 
   return (
     <div>
-      <Section>
+      <section>
         <div className="py-41">
           <div className="max-w-177 mx-auto flex flex-col gap-4">
             <h1 className="font-display text-4xl/15 md:text-7xl/15 font-bold text-center mx-auto">
@@ -175,11 +175,11 @@ export const Pricing = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Virtual office section */}
 
-      <Section>
+      <section>
         <div className="flex flex-col gap-16 pt-20 pb-30">
           <div className="max-w-177 mx-auto flex flex-col gap-4">
             <h2 className="font-display text-5xl/15 font-bold text-center mx-auto px-20">
@@ -210,7 +210,7 @@ export const Pricing = () => {
             ))}
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Accordion section */}
       <Section>
