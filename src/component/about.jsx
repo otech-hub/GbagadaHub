@@ -13,8 +13,8 @@ export const About = () => {
               {" "}
               Building The Future of{" "}
               <TypeAnimation
-                sequence={["Work", 2000, "", 1000]}
-                speed={300}
+                sequence={["Work", 1000, "", 500]}
+                speed={250}
                 repeat={Infinity}
                 cursor={false}
                 className="text-[#FF6B00]"
