@@ -31,9 +31,9 @@ export const Pricing = () => {
       <SectionView>
         <div className="py-41">
           <div className="max-w-177 mx-auto flex flex-col gap-4">
-            <h1 className="font-display text-4xl/15 md:text-7xl/20 font-bold text-center mx-auto">
+            <h1 className="font-display text-4xl/15 md:text-5xl/15 font-bold text-center mx-auto">
               {" "}
-              Plan that scale with{" "}
+              Plan that scale <br /> with{" "}
               <TypeAnimation
                 sequence={["You", 2000, "", 1000]}
                 speed={300}

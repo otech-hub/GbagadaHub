@@ -13,7 +13,9 @@ export const Nav = () => {
   };
 
   return (
-    <div className="flex justify-between bg-bg px-4 lg:px-0 items-center py-4 md:py-10 z-50">
+    <div
+      className={`flex justify-between bg-bg px-4 lg:px-0 items-center py-4 md:py-10 z-50 ${isOpen ? "bg-[#969494] shadow-lg" : ""}`}
+    >
       {/* Logo */}
 
       <div className="flex gap-2 items-center">
@@ -65,36 +67,24 @@ export const Nav = () => {
       </button>
 
       <div
-        className={`md:hidden absolute top-full left-0 h-screen w-full flex flex-col gap-10 items-center justify-center px-4 bg-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen p-4 opacity-100 pointer-events-auto" : "max-h-0 opacity-0 pointer-events-none overflow:hidden"}`}
+        className={`md:hidden absolute top-full left-0 h-screen w-full flex flex-col items-center justify-center gap-8 px-4 bg-[#FF6B00] transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen opacity-100 pointer-events-auto" : "max-h-0 opacity-0 pointer-events-none overflow:hidden"}`}
       >
-        <nav className="flex items-center  flex-col gap-10 text-4xl font-display">
-          <Link to="/" className="py-0.5 px-1 text-4xl" onClick={handleClick}>
+        <nav className="flex items-center justify-center flex-col gap-10 text-3xl text-white font-display">
+          <Link to="/" className="py-0.5 px-1" onClick={handleClick}>
             Home
           </Link>
-          <Link
-            to="/about"
-            className="py-0.5 px-1 text-4xl"
-            onClick={handleClick}
-          >
+          <Link to="/about" className="py-0.5 px-1" onClick={handleClick}>
             About
           </Link>
-          <Link
-            to="/contact"
-            className="py-0.5 px-1 text-4xl"
-            onClick={handleClick}
-          >
+          <Link to="/contact" className="py-0.5 px-1" onClick={handleClick}>
             Contact
           </Link>
-          <Link
-            to="/pricing"
-            className="py-0.5 px-1 text-4xl"
-            onClick={handleClick}
-          >
+          <Link to="/pricing" className="py-0.5 px-1" onClick={handleClick}>
             Pricing
           </Link>
         </nav>
         <button
-          className="rounded border px-4 py-2  hover:bg-[#FF6B00] cursor-pointer w-fit mt-4"
+          className="rounded border border-white text-white px-4 py-2  hover:bg-[#FF6B00] cursor-pointer w-fit mt-4"
           onClick={() => openModal(<RegForm />)}
         >
           Book a Tour

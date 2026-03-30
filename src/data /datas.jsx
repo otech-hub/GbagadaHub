@@ -53,6 +53,12 @@ export const homeSvg = [
     svg: "/svg/leaf.svg",
     description: "icon of a leaf",
   },
+
+  {
+    title: "ergonomic furniture",
+    svg: "/svg/chair.svg",
+    description: "icon of a chair",
+  },
 ];
 
 export const office = [

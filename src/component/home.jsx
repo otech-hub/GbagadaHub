@@ -4,6 +4,7 @@ import { Section, SectionView } from "./animation";
 import { useModal } from "../context/ModalContext";
 import { RegForm } from "./form";
 import { TypeAnimation } from "react-type-animation";
+import { NavLink } from "react-router";
 
 export const Home = () => {
   const { openModal } = useModal();
@@ -15,7 +16,8 @@ export const Home = () => {
         <div className="max-w-177 mx-auto flex flex-col gap-4">
           <h1 className="font-display text-4xl sm:mx-5 lg:text-5xl/15 font-bold text-center mx-auto">
             {" "}
-            This Is Where Your Best Work{" "}
+            <span className="hidden lg:inline-block">This Is</span> Where Your
+            Best Work{" "}
             <TypeAnimation
               sequence={["Happens", 2000, "", 100]}
               wrapper="span"
@@ -38,11 +40,8 @@ export const Home = () => {
             >
               Book a Tour
             </button>
-            <button
-              href="/pricing"
-              className="rounded py-3 px-10 text-xl  border-2"
-            >
-              View pricing
+            <button className="rounded py-3 px-10 text-xl  border-2">
+              <NavLink to="/pricing">View pricing</NavLink>
             </button>
           </div>
         </div>
@@ -94,7 +93,7 @@ export const Home = () => {
           <h2 className="text-4xl text-center font-bold mb-16 font-display">
             Features
           </h2>
-          <div className="md:flex justify-between">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
             <img src="/assets/desk.png" alt="" className="md:max-w-131.5" />
             <div className="grid grid-cols-3 max-w-113.75 gap-3 text-center">
               {homeSvg.map((item) => (
@@ -102,7 +101,7 @@ export const Home = () => {
                   <img
                     src={item.svg}
                     alt={item.description}
-                    className="w-30 h-30"
+                    className="w-20 object-cover"
                   />
                   <p className="font-normal font-body text-[18px]">
                     {item.title}
