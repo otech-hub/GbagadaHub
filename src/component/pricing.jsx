@@ -5,7 +5,7 @@ import { Section, SectionView } from "./animation";
 import { RegForm } from "./form";
 import { useModal } from "../context/ModalContext";
 import { TypeAnimation } from "react-type-animation";
-import { office, faq } from "../data /datas";
+import { office, faq } from "../data/datas";
 
 export const Pricing = () => {
   const [plan, setPlan] = useState("daily");

@@ -1,5 +1,5 @@
 import React from "react";
-import { audience, homeSvg } from "../data /datas";
+import { audience, homeSvg } from "../data/datas";
 import { Section, SectionView } from "./animation";
 import { useModal } from "../context/ModalContext";
 import { RegForm } from "./form";
