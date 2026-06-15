@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Nav } from "./component/nav";
 import { Routes, Route } from "react-router";
 import { About } from "./component/about";
@@ -29,3 +28,4 @@ function App() {
 }
 
 export default App;
+
