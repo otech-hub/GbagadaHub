@@ -1,5 +1,4 @@
 import { PriceBenefits } from "./pricebenefit";
-import { useState } from "react";
 import { Accordion } from "./accordion";
 import { Section, SectionView } from "./animation";
 import { RegForm } from "./form";
@@ -8,23 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import { office, faq } from "../data/datas";
 
 export const Pricing = () => {
-  const [plan, setPlan] = useState("daily");
-
   const { openModal } = useModal();
-
-  const handleWeekly = () => {
-    setPlan("weekly");
-  };
-
-  const handleDaily = () => {
-    setPlan("daily");
-  };
-
-  const handleMonthly = () => {
-    setPlan("monthly");
-  };
-
-  // Virtual office object
 
   return (
     <div>

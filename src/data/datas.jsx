@@ -87,7 +87,7 @@ export const office = [
     tag: "freelancers / remote workers",
     description:
       "Flexible day and week passes for short-term access. Perfect for occasional visits or consecutive workdays.",
-    price: "5,000",
+    price: "7,000",
     duration: "day",
   },
   {
@@ -96,7 +96,7 @@ export const office = [
     tag: "freelancers / remote workers",
     description:
       "Try our day or week passes for flexible, short-term access whenever you need a professional workspace.",
-    price: "23,000",
+    price: "30,000",
     duration: "week",
   },
   {
@@ -105,7 +105,7 @@ export const office = [
     tag: "freelancers / remote workers",
     description:
       "Try our day or week passes for flexible, short-term access whenever you need a professional workspace.",
-    price: "90,000",
+    price: "105,000",
     duration: "month",
   },
 ];
